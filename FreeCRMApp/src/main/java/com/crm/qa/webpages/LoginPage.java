@@ -27,33 +27,28 @@ public class LoginPage extends BaseConfig{
 	@CacheLookup
 	WebElement CRMLogo ;
 	
-	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	public String verifyLoginTitle() {
 		return driver.getTitle();
 	}
-	
 	public boolean verifyCRMLogo() {
 		return CRMLogo.isDisplayed();
 	}
-	
 	
 	public HomePage verifyLogin(String usrnm, String pwd) throws InterruptedException {
 		Username.sendKeys(usrnm);
 		Password.sendKeys(pwd);
 		Thread.sleep(2000);
-		
+		//clicking login button
 		LoginBtn.click();
 		return new HomePage();
 		
 	}
 	
-	//Making some changes to the code.
-	//observe carefully changes made to the code.
+	
 	
 	
 	
