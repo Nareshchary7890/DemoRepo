@@ -1,1 +1,2 @@
 Sample test project, review it with full interest
+Selenium is a open source automation tool, which helps in automating the web applications.
